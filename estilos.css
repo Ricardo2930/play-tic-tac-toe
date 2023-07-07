@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    background: #003973;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E5E5BE, #003973);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E5E5BE, #003973);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    height: 820px;
+    width: 550px;
+    padding: 10px;
+    border-radius: 20px;
+    border-radius: 20px;
+}
+
+h1 {
+    color: #003973;
+    text-align: center;
+    font-size: 65px;
+    margin: 40px;
+}
+
+.table button {
+    width: 168px;
+    height: 168px;
+    font-size: 100px;
+    cursor: pointer;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: fit-content;
+    margin: auto;
+}
+
+.reload {
+    color: #E5E5BE;
+    background-color: #003973;
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+    margin: 30px;
+    font-size: 25px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 10px 40px -6px #003973
+}
+
+.resultado {
+    color: #003973;
+    font-size: 40px;
+}
+
+@media screen and (max-width: 555px) {
+    .container {
+        height: 750px;
+        width: 470px;
+
+    }
+
+    h1 {
+        font-size: 55px;
+    }
+
+    .table button {
+        width: 145px;
+        height: 145px;
+    }
+}
+
+@media screen and (max-width: 472px) {
+    .container {
+        height: 750px;
+        width: 450px;
+    }
+
+    h1 {
+        font-size: 53px;
+    }
+}
+
+@media screen and (max-width: 454px) {
+    .container {
+        height: 680px;
+        width: 400px;
+    }
+
+    .table button {
+        width: 125px;
+        height: 125px;
+        font-size: 90px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .reload {
+        padding: 20px;
+        margin: 30px;
+        font-size: 25px;
+    }
+
+    .resultado {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 393px) {
+    .container {
+        height: 600px;
+        width: 370px;
+    }
+
+    h1 {
+        font-size: 45px;
+        margin: 25px;
+    }
+
+    .table button {
+        width: 110px;
+        height: 110px;
+        font-size: 90px;
+    }
+
+    .reload {
+        padding: 20px;
+        margin: 30px;
+        font-size: 20px;
+    }
+
+    .resultado {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 364px) {
+   
+    h1 {
+        font-size: 42px;
+    }
+
+}
