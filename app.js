@@ -9,9 +9,7 @@ const pulseButton = (event, index) => {
   const btn = event.target;
   const ficha = turno % 2 == 1 ? "x" : "o";
   btn.textContent = ficha;
-  //console.log(index)
   tablero[index] = ficha;
-  //console.log(tablero)
   winner();
 };
 
@@ -69,10 +67,6 @@ const winner = () => {
     ganador.innerHTML = "";
   }
 };
-
-// //botones.forEach((e) => {
-//   e.addEventListener('click',pulseButton)
-// })
 
 botones.forEach((e, index) => {
   e.addEventListener("click", (e) => {
